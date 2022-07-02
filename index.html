@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>My Library</h1>
+    </header>
+    <main>
+        <div class="card">
+            <div class="remove">X</div>
+            <div class="title">Oyasumi Punpun</div>
+            <div class="author">By: Asano, Inio</div>
+            <div class="pages">Pages: 13 Volumes, ~ 400 pages each</div>
+            <div class="language">Language: English</div>
+            <div class="read">Mark as read:
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <button class="add-book">+</button>
+    </main>
+    <div class="blur"></div>
+    <form action="">
+        <div class="form-container">
+            <div class="form-header">
+                <h2>Add New Book</h2>
+                <h2 class="form-exit">X</h2>
+            </div>
+            <div class="input-container">
+                <div class="form-title">
+                    <label for="title">Book title*</label>
+                    <input type="text" class="text-input" id="title" name="book-title" required>
+                </div>
+                <div class="form-author">
+                    <label for="author">Book author*</label>
+                    <input type="text" class="text-input" id="author" name="book-author" required>
+                </div>
+                <div class="form-pages">
+                    <label for="pages">Number of pages*</label>
+                    <input type="number" class="num-input" id="pages" name="book-pages" required>
+                </div>
+                <div class="form-lang">
+                    <label for="language">Language*</label>
+                    <input type="text" class="text-input" id="language" name="book-lang" required>
+                </div>
+                <div class="form-read">
+                    <div>Book Status*</div>
+                    <div class="radio-container">
+                        <div>
+                            <input type="radio" id="read" name="read-status" value="true" required>
+                            <label for="read">Read</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="notRead" name="read-status" value="false" required>
+                            <label for="notRead">Not read</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-submit">
+                <input type="submit">
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
